@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Felipe Serna</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">FELIPE SERNA</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Proyectos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <header class="text-center mb-5 animate-view">
+            <h2 class="display-5 fw-bold">Mis Proyectos</h2>
+            <p class="text-muted">Una muestra de mi trabajo técnico y creativo</p>
+        </header>
+
+        <div class="row g-4">
+            <div class="col-md-4 animate-view" style="animation-delay: 0.2s;">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-primary"><i class="fas fa-code-branch fa-2x"></i></div>
+                        <h5 class="card-title fw-bold">Project restaurante</h5>
+                        <p class="card-text text-muted">Aplicación desarrollada en C# que permite gestionar pedidos y visualizar el menú de un restaurante. Incluye funcionalidades como selección de platos, cálculo automático del total y manejo de órdenes, destacando el uso de lógica de programación</p>
+                        <a target="_blank" href="https://github.com/fhilpe/Project-restaurante.git">
+                        <button  class="btn btn-outline-primary rounded-pill px-4 ">Repositorio github</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 animate-view" style="animation-delay: 0.4s;">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-success"><i class="fas fa-database fa-2x"></i></div>
+                        <h5 class="card-title fw-bold">Encriptador</h5>
+                        <p class="card-text text-muted">Herramienta que permite cifrar y descifrar mensajes de forma sencilla, aplicando reglas de transformación de texto. Ideal para proteger información básica y demostrar lógica de programación y manipulación de strings.</p>
+                        <a target="_blank" href="https://github.com/fhilpe/Encriptador-de-alura-latam.git">
+                        <button  class="btn btn-outline-primary rounded-pill px-4 ">Repositorio github</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 animate-view" style="animation-delay: 0.6s;">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3 text-warning"><i class="fas fa-mobile-alt fa-2x"></i></div>
+                        <h5 class="card-title fw-bold">Juego del numero secreto</h5>
+                        <p class="card-text text-muted">Juego interactivo donde el usuario debe adivinar un número generado aleatoriamente. Incluye pistas, control de intentos y retroalimentación en tiempo real, reforzando conceptos de lógica, condicionales y manejo de eventos.</p>
+                        <a target="_blank" href="https://github.com/fhilpe/Juego-del-numero-secreto-Alura.git">
+                        <button  class="btn btn-outline-primary rounded-pill px-4 ">Repositorio github</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="modalTitle font-weight-bold">Video del Proyecto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoIframe" src="" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-5 mt-5">
+        <div class="container">
+            <p class="mb-2">Desarrollado por <strong>Felipe Serna</strong></p>
+            <p class="mb-0" class="small text-muted mb-0">© 2026 | Herramientas de Programación III</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

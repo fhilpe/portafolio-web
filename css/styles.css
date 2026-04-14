@@ -1,0 +1,89 @@
+/* General */
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    color: #2d3436;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-view {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Estilo para la foto de perfil (lp.webp) */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    color: white !important;
+    padding: 100px 0;
+}
+
+.hero-section .text-muted {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Tarjetas de Proyectos */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+
+/* Habilidades con Iconos */
+.skill-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.skill-card:hover {
+    background: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.fab {
+    transition: all 0.3s ease;
+}
+
+.fab:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #2d3436;
+    border-top: 4px solid #6c5ce7;
+}
