@@ -4,94 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Felipe Serna</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">FELIPE SERNA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">FELIPE SERNA</a>
 
-    <header class="hero-section text-center py-5 animate-view">
-        <div class="container">
-            <img src="img/ME.JPEG" alt="Foto de Felipe Serna" class="rounded-circle profile-img mb-4 shadow-lg">
-            <h1 class="display-3 fw-bold text-white">Hola, soy Felipe Serna</h1>
-            <p class="lead text-white-50">Desarrollador apasionado por crear experiencias digitales innovadoras.</p>
-        </div>
-    </header>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section class="container py-5 animate-view" style="animation-delay: 0.2s;">
-        <div class="row justify-content-center text-center">
-            <div class="col-md-8">
-                <h2 class="mb-4 fw-bold">Sobre Mí</h2>
-                <p class="fs-5 text-muted">Estudiante de desarrollo de software en 4.º semestre, con experiencia en C++, C#, SQL y PostgreSQL. Me interesa el desarrollo web y he comenzado a profundizar en esta área, combinando lo aprendido en la universidad con práctica por cuenta propia para construir soluciones funcionales y bien estructuradas.</p>
-            </div>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <section class="py-5 bg-white animate-view" style="animation-delay: 0.4s;">
-    <div class="container text-center">
-        <h2 class="mb-5 fw-bold">Tecnologías</h2>
-        
-        <div class="row g-4 mb-4">
-            <div class="col-md-3">
-                <div class="skill-card shadow-sm border-0"><i class="fab fa-html5 fa-3x text-danger mb-2"></i><h5 class="fw-bold">HTML5</h5></div>
-            </div>
-            <div class="col-md-3">
-                <div class="skill-card shadow-sm border-0"><i class="fab fa-css3-alt fa-3x text-primary mb-2"></i><h5 class="fw-bold">CSS3</h5></div>
-            </div>
-            <div class="col-md-3">
-                <div class="skill-card shadow-sm border-0"><i class="fab fa-js fa-3x text-warning mb-2"></i><h5 class="fw-bold">JavaScript</h5></div>
-            </div>
-            <div class="col-md-3">
-                <div class="skill-card shadow-sm border-0"><i class="fab fa-python fa-3x text-info mb-2"></i><h5 class="fw-bold">Python</h5></div>
-            </div>
+<!-- HERO -->
+<header class="hero-section text-center py-5">
+    <div class="container">
+        <img src="img/ME.JPEG" alt="Foto de Felipe Serna" class="rounded-circle profile-img mb-4 shadow-lg">
+
+        <h1 class="display-4 fw-bold text-white">
+            Hola, soy Felipe Serna
+        </h1>
+
+        <p class="lead text-white-50 mb-4">
+            Estudiante de desarrollo de software enfocado en backend, lógica de programación y bases de datos.
+        </p>
+
+        <div>
+            <a href="projects.html" class="btn btn-light me-2">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-outline-light">Contactarme</a>
         </div>
+    </div>
+</header>
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="skill-card shadow-sm border-0"><i class="fas fa-code fa-3x text-secondary mb-2"></i><h5 class="fw-bold">C# / C++</h5></div>
-            </div>
-            <div class="col-md-4">
-                <div class="skill-card shadow-sm border-0"><i class="fas fa-database fa-3x text-success mb-2"></i><h5 class="fw-bold">SQL Server</h5></div>
-            </div>
-            <div class="col-md-4">
-                <div class="skill-card shadow-sm border-0"><i class="fas fa-laptop-code fa-3x text-dark mb-2"></i><h5 class="fw-bold">Desarrollo</h5></div>
-            </div>
+<!-- SOBRE MI -->
+<section class="container py-5 text-center animate-view">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <h2 class="fw-bold mb-4">Sobre mí</h2>
+
+            <p class="text-muted fs-5">
+                Soy estudiante de desarrollo de software con interés en construir aplicaciones funcionales
+                y bien estructuradas. Me enfoco en mejorar mi lógica de programación, trabajar con bases de datos
+                y desarrollar soluciones que resuelvan problemas reales.
+            </p>
+
         </div>
     </div>
 </section>
 
-    <footer class="text-white text-center py-5">
-        <div class="container">
-            <p class="mb-3">Conectemos en redes sociales</p>
-            <div class="social-links mb-4">
-                <a href="https://github.com/fhilpe" target="_blank" class="text-white fs-4 mx-3"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-white fs-4 mx-3"><i  class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-white fs-4 mx-3"><i class="fab fa-google"></i>
-</a>
-            </div>
-            <p class="mb-0">&copy; 2026 <strong>Felipe Serna</strong> - Portafolio Experimental</p>
-        </div>
-    </footer>
+<!-- TECNOLOGÍAS -->
+<section class="py-5 bg-white animate-view">
+    <div class="container text-center">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+        <h2 class="fw-bold mb-5">Tecnologías</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-6 col-md-3">
+                <div class="skill-card">
+                    <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
+                    <h6 class="fw-bold">HTML</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt fa-3x text-primary mb-2"></i>
+                    <h6 class="fw-bold">CSS</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="skill-card">
+                    <i class="fab fa-js fa-3x text-warning mb-2"></i>
+                    <h6 class="fw-bold">JavaScript</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="skill-card">
+                    <i class="fab fa-python fa-3x text-info mb-2"></i>
+                    <h6 class="fw-bold">Python</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="skill-card">
+                    <i class="fas fa-code fa-3x text-secondary mb-2"></i>
+                    <h6 class="fw-bold">C# / C++</h6>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="skill-card">
+                    <i class="fas fa-database fa-3x text-success mb-2"></i>
+                    <h6 class="fw-bold">SQL Server</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="container py-5 animate-view">
+    <h2 class="text-center fw-bold mb-4">Contacto</h2>
+
+    <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+        <input type="text" name="name" class="form-control mb-3" placeholder="Tu nombre" required>
+        <input type="email" name="email" class="form-control mb-3" placeholder="Tu correo" required>
+        <textarea name="message" class="form-control mb-3" rows="5" placeholder="Tu mensaje" required></textarea>
+
+        <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+    </form>
+
+    <p id="status" class="text-center mt-3"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-5">
+    <div class="container">
+
+        <div class="mb-3">
+            <a href="https://github.com/fhilpe" target="_blank" class="text-white fs-4 mx-3">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/felipe-serna" target="_blank" class="text-white fs-4 mx-3">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <p class="mb-0">© 2026 Felipe Serna</p>
+
+    </div>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- Script -->
+<script src="js/scripts.js"></script>
+
 </body>
 </html>

@@ -1,21 +1,20 @@
-$(document).ready(function() {
-    // Al hacer clic en un botón con la clase .open-video
-    $('.open-video').on('click', function() {
-        // Obtenemos los datos del botón
-        var videoUrl = $(this).data('video');
-        var projectTitle = $(this).data('title');
+// Inicializar EmailJS (reemplaza con tu PUBLIC KEY)
+(function(){
+    emailjs.init("KXFqbGU0beHODEYkL");
+})();
 
-        // Asignamos el título y la URL al iframe del modal
-        $('#modalTitle').text(projectTitle);
-        $('#videoIframe').attr('src', videoUrl);
+const form = document.getElementById("contact-form");
+const status = document.getElementById("status");
 
-        // Mostramos el modal usando la API de Bootstrap
-        var myModal = new bootstrap.Modal(document.getElementById('videoModal'));
-        myModal.show();
-    });
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-    // Limpiar el iframe al cerrar el modal para que el video deje de sonar
-    $('#videoModal').on('hidden.bs.modal', function () {
-        $('#videoIframe').attr('src', '');
+    emailjs.sendForm("service_p43qmhs", "template_ngj0zk6", this)
+    .then(() => {
+        status.innerText = "Mensaje enviado correctamente 👍";
+        form.reset();
+    }, (error) => {
+        status.innerText = "Error al enviar ❌";
+        console.log(error);
     });
 });
